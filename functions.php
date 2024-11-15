@@ -36,6 +36,7 @@ function hello_elementor_child_scripts_styles()
 }
 add_action('wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20);
 
+// Custom Post Type - Deer Test
 function register_deer_tests_post_type()
 {
     $labels = array(
@@ -67,6 +68,7 @@ function register_deer_tests_post_type()
 }
 add_action('init', 'register_deer_tests_post_type');
 
+// Debugger
 function fix_print($data)
 {
     echo '<pre>';
